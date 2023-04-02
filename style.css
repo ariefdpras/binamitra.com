@@ -16,7 +16,6 @@ body {
   font-family: "kreon", serif;
   background-color: var(--bg);
   color: black;
-  min-height: 3000px;
 }
 
 /* navbar */
@@ -151,12 +150,14 @@ body {
 }
 /* about section */
 .about,
-.menu {
+.menu,
+.contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -201,11 +202,13 @@ body {
   line-height: 1.4;
 }
 /* produk section */
-.menu h2 {
+.menu h2,
+.contact h2 {
   margin-bottom: 1rem;
 }
 
-.menu p {
+.menu p,
+.contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -239,6 +242,86 @@ body {
 .menu .row .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
 }
+
+/* section kontak */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #f0fff0;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid black;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 80%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background: none;
+  outline-color: black;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #056875;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #056875;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: white;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+footer .links {
+  margin-bottom: 1.5rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
 /* media queries */
 
 /* laptop */
@@ -302,6 +385,15 @@ body {
   }
   .menu p {
     font-size: 1.5rem;
+  }
+  .contact .row {
+    flex-wrap: wrap;
+  }
+  .contact .row .map {
+    height: 30rem;
+  }
+  .contact .row form {
+    padding-top: 0.5rem;
   }
 }
 
