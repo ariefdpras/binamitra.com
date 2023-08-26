@@ -113,7 +113,7 @@ const gallery = document.querySelectorAll(".product-card");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const page = document.querySelector(".page-num");
-const maxItem = 6;
+const maxItem = 8;
 let index = 1;
 
 const pagination = Math.ceil(gallery.length / maxItem);
