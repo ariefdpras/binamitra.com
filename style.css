@@ -397,6 +397,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   margin-top: 4rem;
+  margin-bottom: 7rem;
 }
 
 .products h2 {
@@ -417,6 +418,26 @@ body {
   text-align: center;
   border: 1px solid grey;
   padding: 2rem;
+}
+
+.products .product-card.hide {
+  display: none;
+}
+
+.products .product-card.show {
+  display: block;
+  animation: show 0.5s ease;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .products .product-icons {
@@ -459,6 +480,39 @@ body {
   color: red;
   font-style: italic;
   font-size: 1.2rem;
+}
+
+.products .pagination {
+  width: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.products .pagination div {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.products .pagination .page {
+  color: gray;
+  font-size: 20px;
+}
+
+.products .pagination .prev,
+.products .pagination .next {
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.products .pagination .prev.disabled,
+.products .pagination .next.disabled {
+  border-color: gray;
+  color: gray;
+  pointer-events: none;
 }
 
 /* Section Detail Produk */
@@ -692,12 +746,24 @@ footer {
   position: absolute;
   background: #000000;
   color: #fff;
-  padding: 100px 0 30px;
+  padding: 90px 0 30px;
   /* border-top-left-radius: 100px; */
   font-size: 20px;
   line-height: 20px;
-  /* top: 150%; */
+  /* top: 400%; */
+  margin-top: auto;
+}
 
+#product-footer {
+  width: 100%;
+  position: absolute;
+  background: #000000;
+  color: #fff;
+  padding: 90px 0 30px;
+  /* border-top-left-radius: 100px; */
+  font-size: 20px;
+  line-height: 20px;
+  top: 150%;
   margin-top: auto;
 }
 
@@ -843,6 +909,10 @@ footer .copyright {
   html {
     font-size: 85%;
   }
+  #product-footer {
+    margin-bottom: auto;
+    top: 680%;
+  }
 }
 
 /* tablet */
@@ -987,8 +1057,15 @@ footer .copyright {
     margin-right: 0.9rem;
     padding: 1rem 4rem;
   }
+  .detail .text {
+    width: 90%;
+  }
   .detail .detail-button p {
     font-size: 1.6rem;
+  }
+  #product-footer {
+    margin-top: auto;
+    top: 250%;
   }
 }
 

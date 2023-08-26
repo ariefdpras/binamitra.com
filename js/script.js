@@ -107,3 +107,57 @@ const showCard = (e) => {
 };
 
 textButton.forEach((a) => a.addEventListener("click", showCard));
+
+// pagination produk
+const gallery = document.querySelectorAll(".product-card");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const page = document.querySelector(".page-num");
+const maxItem = 6;
+let index = 1;
+
+const pagination = Math.ceil(gallery.length / maxItem);
+console.log(pagination);
+
+prev.addEventListener("click", function () {
+  index--;
+  check();
+  showItems();
+});
+next.addEventListener("click", function () {
+  index++;
+  check();
+  showItems();
+});
+
+function check() {
+  if (index == pagination) {
+    next.classList.add("disabled");
+  } else {
+    next.classList.remove("disabled");
+  }
+
+  if (index == 1) {
+    prev.classList.add("disabled");
+  } else {
+    prev.classList.remove("disabled");
+  }
+}
+
+function showItems() {
+  for (let i = 0; i < gallery.length; i++) {
+    gallery[i].classList.remove("show");
+    gallery[i].classList.add("hide");
+
+    if (i >= index * maxItem - maxItem && i < index * maxItem) {
+      gallery[i].classList.remove("hide");
+      gallery[i].classList.add("show");
+    }
+    page.innerHTML = index;
+  }
+}
+
+window.onload = function () {
+  showItems();
+  check();
+};
