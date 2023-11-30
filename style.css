@@ -40,7 +40,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
   margin-top: -1%;
@@ -49,9 +49,9 @@ body {
 }
 
 .navbar p {
-  font-size: 1.05rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-left: 5.5%;
   position: absolute;
 }
@@ -63,7 +63,7 @@ body {
 .navbar .navbar-nav a {
   color: black;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0 1rem;
 }
 
