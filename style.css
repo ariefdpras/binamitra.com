@@ -256,7 +256,7 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 4em;
+  font-size: 3em;
   color: black;
   text-shadow: 1px 1px 3px rgba(255, 250, 240, 0.5);
   line-height: 1;
@@ -273,7 +273,7 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 400;
@@ -304,7 +304,7 @@ body {
 .contact h2,
 .products h2 {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
   color: black;
 }
@@ -337,14 +337,14 @@ body {
 }
 
 .about .row .content h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.4;
   font-style: oblique;
@@ -379,7 +379,7 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 10%;
-  width: 80%;
+  width: 70%;
 }
 
 .menu .row .menu-card img:hover {
@@ -527,7 +527,7 @@ body {
   position: relative;
   left: 0;
   bottom: 0;
-  top: 140px;
+  top: 80px;
   width: 100%;
   height: 100%;
 }
@@ -546,13 +546,13 @@ body {
 }
 
 .detail .detail-content img {
-  height: 25rem;
+  height: 20rem;
   margin-right: 2rem;
 }
 
 .detail .detail-product-content {
-  margin-top: 7rem;
-  font-size: 2rem;
+  margin-top: 6rem;
+  font-size: 1.5rem;
   line-height: 3.8rem;
 }
 
@@ -576,7 +576,7 @@ body {
   gap: 0.5rem;
   width: 12rem;
   background-color: gray;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   margin-top: 1rem;
   padding: 1rem 1.6rem;
@@ -602,7 +602,7 @@ body {
   position: absolute;
   margin-top: 8rem;
   width: 70%;
-  font-size: 1.3rem;
+  font-size: 1rem;
 
   text-align: justify;
   animation: moving 0.5s ease;
@@ -775,7 +775,7 @@ footer {
   /* border-top-left-radius: 100px; */
   font-size: 15px;
   line-height: 20px;
-  top: 120%;
+  top: 140%;
   margin-top: auto;
 }
 
@@ -917,7 +917,7 @@ footer .copyright {
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
   }
   #hamburger-menu {
     display: inline-block;
